@@ -20,7 +20,7 @@ public class MainPageTest {
 
         open("https://www.dimepkairos.com.br/Dimep/Account/Marcacao");
         Configuration.browserSize = "1280x800";
-        Configuration.downloadsFolder ="src/test/resources/comprovante";
+        Configuration.downloadsFolder ="./comprovante";
         Configuration.proxyEnabled = true;
 
         String username = getProp().getProperty("kairos.username");

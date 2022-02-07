@@ -15,7 +15,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class Util {
 
-    final static String PATH_INTERN = "src/test/resources/";
+    final static String PATH_INTERN = "./";
     static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
     public static Properties getProp() throws IOException {

@@ -84,10 +84,12 @@ public class PainelFrameInfo extends JFrame {
                     if(!validated){
                         JOptionPane.showMessageDialog(null,"Não foi possivel lançar o ponto, verifique seu login no arquivo system.config");
                         setVisible(false);
+                        System.exit(0);
                     }else{
                         JOptionPane.showMessageDialog(null,"Ponto lançado com sucesso");
                         Thread.sleep(1600);
                         setVisible(false);
+                        System.exit(0);
                     }
 
                 } catch (IOException | InterruptedException ex) {
@@ -98,6 +100,7 @@ public class PainelFrameInfo extends JFrame {
         btnNewButton.setBounds(36, 199, 200, 23);
         contentPane.add(btnNewButton);
         setVisible(false);
+
     }
 
     private boolean baterPonto() throws IOException {
